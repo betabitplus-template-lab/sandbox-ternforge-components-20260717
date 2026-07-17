@@ -1,0 +1,9 @@
+[dependency-groups]
+dev = [
+  "pyright>=1.1.400",
+  "ruff>=0.12",
+]
+test = ["pytest>=8"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/{{ package_name }}"]
